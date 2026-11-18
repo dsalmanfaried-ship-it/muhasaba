@@ -1,0 +1,63 @@
+{
+  "schedule": [
+    {
+      "day": "Saturday",
+      "day_ar": "السبت",
+      "lessons": [
+        "إنجليزي",
+        "فيزياء"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "day_ar": "الأحد",
+      "lessons": [
+        "عربي",
+        "كيمياء"
+      ]
+    },
+    {
+      "day": "Monday",
+      "day_ar": "الاثنين",
+      "lessons": [
+        "أحياء",
+        "جيولوجيا"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "day_ar": "الثلاثاء",
+      "lessons": [
+        "كيمياء",
+        "إنجليزي"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "day_ar": "الأربعاء",
+      "lessons": [
+        "عربي",
+        "فيزياء"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "day_ar": "الخميس",
+      "lessons": [
+        "أحياء",
+        "جيولوجيا"
+      ]
+    },
+    {
+      "day": "Friday",
+      "day_ar": "الجمعة",
+      "time": "الصباح",
+      "optional": true,
+      "choose_one": [
+        "كيمياء",
+        "فيزياء",
+        "عربي"
+      ]
+    }
+  ]
+}
