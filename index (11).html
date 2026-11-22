@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<title>يوم الدكتور سلمان</title>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="يومي">
+<meta name="theme-color" content="#f5f2ea" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1714" media="(prefers-color-scheme: dark)">
+<meta name="format-detection" content="telephone=no">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icon-180.png">
+<link rel="icon" type="image/png" href="icon-192.png">
+<style>
+:root{--bg:#f5f2ea;--card:#fff;--tx:#1b2a24;--mut:#6a7a72;--ac:#0f6b4f;--ac2:#dcefe6;--bd:#e5e0d3;--gold:#a97c1f;--gl:#f7ecd2;--red:#c0392b;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1714;--card:#17221e;--tx:#eaf1ed;--mut:#9bb0a6;--ac:#4cc79a;--ac2:#1d3a2f;--bd:#273830;--gold:#e0b45a;--gl:#33290f;--red:#ff8a7a}}
+:root[data-theme="dark"]{--bg:#0f1714;--card:#17221e;--tx:#eaf1ed;--mut:#9bb0a6;--ac:#4cc79a;--ac2:#1d3a2f;--bd:#273830;--gold:#e0b45a;--gl:#33290f;--red:#ff8a7a}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+body{margin:0;background:var(--bg);color:var(--tx);font-family:"Segoe UI",Tahoma,"Noto Naskh Arabic",system-ui,sans-serif;line-height:1.7;padding:12px 12px 100px;max-width:680px;margin-inline:auto}
+button,input,textarea{font-family:inherit}button{cursor:pointer}
+.hi{font-size:19px;font-weight:700;margin:4px 2px 0}
+.nav{display:flex;align-items:center;gap:8px;margin:6px 0}
+.nav button{background:var(--card);border:1px solid var(--bd);color:var(--tx);border-radius:12px;padding:7px 12px;font-size:14px}
+.nav .d{flex:1;text-align:center;font-weight:600;font-size:14px;color:var(--mut)}
+.box{background:var(--card);border:1px solid var(--bd);border-radius:16px;padding:12px;margin:8px 0}
+.bar{height:9px;background:var(--ac2);border-radius:6px;overflow:hidden;margin-top:7px}
+.bar i{display:block;height:100%;background:var(--ac);border-radius:6px;transition:width .25s}
+h2{font-size:15px;margin:18px 4px 8px;color:var(--gold)}
+h2.late{color:var(--red)}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:12px;margin:8px 0}
+.card.done{border-color:var(--ac);background:var(--ac2)}
+.t{font-size:15.5px;font-weight:600}
+.row{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:8px}
+.cnt{font-size:20px;font-weight:700;color:var(--ac)}
+.cnt small{font-size:12.5px;color:var(--mut);font-weight:400}
+.btns{display:flex;gap:6px}
+.btns button{border:1px solid var(--bd);background:var(--bg);color:var(--tx);border-radius:11px;padding:9px 12px;font-size:14px;min-width:44px}
+.btns .p{background:var(--ac);color:#fff;border-color:var(--ac);font-weight:700;padding:9px 18px}
+.btns .run{background:var(--gold);border-color:var(--gold)}
+.big{font-size:34px;font-weight:700;color:var(--ac);text-align:center;margin:4px 0;font-variant-numeric:tabular-nums}
+.seg{display:flex;gap:6px;margin:10px 0}
+.seg button{flex:1;border:1px solid var(--bd);background:var(--card);color:var(--tx);border-radius:12px;padding:11px 6px;font-size:14.5px;line-height:1.4}
+.seg button small{display:block;font-size:11.5px;color:var(--mut)}
+.seg .on{background:var(--ac);color:#fff;border-color:var(--ac)}.seg .on small{color:#e6f4ee}
+.now{background:var(--gl);border-radius:12px;padding:9px 12px;font-size:13.5px;margin:8px 0}
+.msg{background:var(--gl);border-radius:12px;padding:9px 12px;margin-top:10px;font-size:13.5px}
+.tk{display:flex;align-items:center;gap:10px;background:var(--card);border:1px solid var(--bd);border-radius:13px;padding:10px;margin:6px 0}
+.tk.done{background:var(--ac2);border-color:var(--ac)}
+.tk.done .tx div{text-decoration:line-through;color:var(--mut)}
+.tk.late{border-color:var(--red)}
+.ck{width:32px;height:32px;border-radius:50%;border:2px solid var(--ac);background:none;color:#fff;font-size:17px;flex:none;padding:0}
+.tk.done .ck{background:var(--ac)}
+.tx{flex:1;font-size:15px;line-height:1.5}
+.tx small{color:var(--mut);font-size:12px}
+.tk .btns button{padding:3px 8px;min-width:30px;font-size:13px}
+.x{border:0;background:none;color:var(--mut);font-size:18px}
+.add{display:flex;gap:6px;margin:8px 0}
+.add input{flex:1;min-width:0;border:1px solid var(--bd);background:var(--card);color:var(--tx);border-radius:11px;padding:10px;font-size:15px}
+.add button{background:var(--ac);color:#fff;border:0;border-radius:11px;padding:0 16px;font-size:15px}
+.sub{display:flex;gap:6px;flex-wrap:wrap;margin:8px 0}
+.sub button{border:1px solid var(--bd);background:var(--card);color:var(--tx);border-radius:20px;padding:5px 12px;font-size:13px}
+.sub .on{background:var(--gold);color:#fff;border-color:var(--gold)}
+.link{background:none;border:0;color:var(--ac);font-size:14px;padding:6px 2px;text-decoration:underline}
+details{background:var(--card);border:1px solid var(--bd);border-radius:14px;margin:8px 0;padding:0 12px}
+summary{padding:13px 0;font-weight:700;color:var(--gold);list-style:none}
+summary::after{content:"‹";float:left;color:var(--mut)}
+details[open] summary::after{content:"⌄"}
+details .card,details .c{background:var(--bg)}
+.g{display:grid;grid-template-columns:repeat(3,1fr);gap:6px}
+.c{border:1px solid var(--bd);border-radius:11px;padding:6px 4px;text-align:center}
+.c.done{border-color:var(--ac);background:var(--ac2)}
+.c .tap{width:100%;border:0;background:none;color:var(--tx);font-size:13px;padding:4px 0}
+.c .n{font-size:18px;font-weight:700;color:var(--ac);display:block}
+.c .n small{font-size:11px;color:var(--mut)}
+.c .m{border:0;background:none;color:var(--mut);font-size:12px;padding:2px 6px}
+.c label{display:block;font-size:11px;color:var(--mut)}
+.chip{font-size:12px;background:var(--gl);color:var(--gold);border-radius:20px;padding:1px 10px;margin-inline-start:6px;font-weight:600}
+.quote{background:linear-gradient(135deg,var(--ac2),var(--gl));border:1px solid var(--bd);border-radius:16px;padding:16px;text-align:center}
+.quote q{display:block;font-size:18px;font-weight:600;line-height:1.9;quotes:none}
+.quote small{display:block;color:var(--mut);margin-top:6px}
+.quote button{margin-top:8px;border:1px solid var(--bd);background:var(--card);color:var(--tx);border-radius:20px;padding:5px 14px;font-size:13px}
+.tip b{display:block}.tip p{margin:0;color:var(--mut);font-size:14px}
+textarea{width:100%;height:80px;border:1px solid var(--bd);background:var(--card);color:var(--tx);border-radius:11px;padding:8px;font-size:12px;direction:ltr}
+.reset{display:block;margin:18px auto 0;background:none;border:1px solid var(--bd);color:var(--mut);border-radius:11px;padding:8px 14px;font-size:13px}
+.tabs{position:fixed;bottom:0;left:0;right:0;display:flex;background:var(--card);border-top:1px solid var(--bd);padding:6px 6px calc(6px + env(safe-area-inset-bottom,0px));max-width:680px;margin:auto}
+.tabs button{flex:1;border:0;background:none;color:var(--mut);font-size:12.5px;padding:6px 0;border-radius:12px}
+.tabs button span{display:block;font-size:21px;line-height:1.2}
+.tabs button.on{color:var(--ac);background:var(--ac2);font-weight:700}
+.dn{flex:none;border:2px solid var(--ac);background:none;color:var(--ac);border-radius:20px;padding:6px 14px;font-size:14px;font-weight:700;transition:.15s}
+.dn.on{background:var(--ac);color:#fff;animation:pop .35s}
+@keyframes pop{0%{transform:scale(.8)}60%{transform:scale(1.15)}100%{transform:scale(1)}}
+button:active{transform:scale(.96)}
+.toast{position:fixed;top:calc(12px + env(safe-area-inset-top,0px));left:50%;transform:translate(-50%,-90px);background:var(--ac);color:#fff;padding:10px 18px;border-radius:24px;font-size:14px;z-index:20;transition:transform .3s;box-shadow:0 6px 20px rgba(0,0,0,.2);max-width:90%;text-align:center}
+.toast.show{transform:translate(-50%,0)}
+#hd{background:linear-gradient(135deg,var(--ac2),var(--gl))}
+.ring{display:flex;align-items:center;gap:12px}
+.quote{cursor:pointer;margin:8px 0}
+.card,.tk{transition:background .2s,border-color .2s}
+.ei{width:100%;border:1px solid var(--bd);background:var(--card);color:var(--tx);border-radius:10px;padding:8px;font-size:15px}
+.tl{display:flex;gap:10px;padding:8px 0;border-top:1px solid var(--bd)}
+.tl:first-of-type{border-top:0}
+.tl b{display:block;font-size:14px}
+.tl span{font-size:13.5px;color:var(--mut)}
+.ta{width:100%;height:84px;border:1px solid var(--bd);background:var(--bg);color:var(--tx);border-radius:11px;padding:10px;font-size:15px;margin-top:6px;direction:rtl}
+</style>
+</head>
+<body>
+<div class="hi" style="display:flex;justify-content:space-between;align-items:center"><span>السلام عليكم يا دكتور سلمان 👋</span><button class="x" id="sd" onclick="snd()" title="الصوت">🔊</button></div>
+<div class="nav"><button id="nx">‹</button><div class="d" id="dt"></div><button id="pv">›</button></div>
+<div class="box" id="hd"></div>
+<div id="tb"></div>
+<div class="toast" id="ts"></div>
+<div class="tabs" id="tabs"></div>
+<script>
+var AD=[["سبحان الله وبحمده، سبحان الله العظيم",300],["أستغفر الله العظيم وأتوب إليه",300],["لا إله إلا أنت سبحانك إني كنت من الظالمين",300],["لا إله إلا الله وحده لا شريك له، له الملك وله الحمد وعلى كل شيء قدير",100],["لا حول ولا قوة إلا بالله العلي العظيم",300],["اللهم صل وسلم وبارك على سيدنا محمد",300]];
+var PR=["الفجر","الظهر","العصر","المغرب","العشاء"],DK=["سبحان الله","الحمد لله","الله أكبر"];
+var SN=[["f","🌙 ركعتان قبل الفجر"],["d1","☀️ ٤ ركعات قبل الظهر"],["d2","☀️ ركعتان بعد الظهر"],["m","🌇 ركعتان بعد المغرب"],["i","🌃 ركعتان بعد العشاء"],["h","🌤️ صلاة الضحى ٤ ركعات"],["w","🕌 وتر"]];
+var TOT=36000,WIN=32400;
+var Q=[["المؤمن القوي خير وأحب إلى الله من المؤمن الضعيف، وفي كل خير. احرص على ما ينفعك واستعن بالله ولا تعجز","رواه مسلم"],["مثل الذي يذكر ربه والذي لا يذكر ربه مثل الحي والميت","رواه البخاري"],["لا يكلف الله نفسا إلا وسعها","البقرة ٢٨٦"],["وقل رب زدني علما","طه ١١٤"],["من سلك طريقا يلتمس فيه علما سهل الله له به طريقا إلى الجنة","رواه مسلم"],["نعمتان مغبون فيهما كثير من الناس: الصحة والفراغ","رواه البخاري"],["فإذا فرغت فانصب، وإلى ربك فارغب","الشرح ٧-٨"],["ألا بذكر الله تطمئن القلوب","الرعد ٢٨"],["اللهم بارك لأمتي في بكورها","رواه أبو داود والترمذي"],["وأن ليس للإنسان إلا ما سعى","النجم ٣٩"]];
+var TIPS=[["🤲","دعاء قبل المذاكرة","«اللهم لا سهل إلا ما جعلته سهلا، وأنت تجعل الحزن إذا شئت سهلا». و«رب زدني علما»."],["🕯️","الخلوة أول الطريق","النجاح بيبدأ من الخلوة. اخلُ بنفسك واطلب العلم، وقلّل المخالطة وقت المذاكرة."],["📵","الموبايل سارق الوقت","حطه في أوضة تانية أو على وضع الطيران وقت الجلسة."],["⏳","الوقت رأس مالك","الصحة والفراغ نعمتان مغبون فيهما كتير من الناس. اسأل نفسك: ده بينفعني ولا لأ؟"],["🌅","ابدأ بعد الفجر","أحسن ذهن في اليوم بعد الفجر، فخلّي أول جلسة للمادة الأصعب."],["🍅","٢٥ دقيقة وراحة","ذاكر ٢٥–٥٠ دقيقة بتركيز كامل، وبعدها راحة ٥–١٠ دقايق من غير سوشيال."],["🔁","المراجعة والحل","الحفظ من غير حل بينسى. خلّي جزء من كل يوم لحل أسئلة، ومراجعة أسبوعية."],["🩺","نيّتك","انوِ بمذاكرتك طاعة لله وأنك تبقى دكتور تنفع الناس، فتتحول الساعات لعبادة."],["⚖️","بلا إرهاق","«لا يكلف الله نفسا إلا وسعها». الاستمرار كل يوم أحسن من يوم قوي وعشرة ضايعين، ونام كفاية."]];
+var ENC=["دكتور سلمان، ٩٩٪ قريبة إن شاء الله 🤍","دكتور سلمان، ٩٩٫٩٪ قريبة إن شاء الله ✨","دكتور سلمان، ٩٩٫٥٪ قريبة إن شاء الله، كمّل بثبات","مش مهم تخلّص المحاضرة بسرعة؛ المهم تذاكر اللي أخدته كويس وتنتج.","ساعة مذاكرة بتركيز أحسن من ثلاث ساعات بنص عقل.","مش لازم تخلّص كل حاجة النهاردة، المهم اللي تعمله يبقى متقن."];
+var CH=["ما شاء الله، أحسنت يا دكتور! 🎉","ربنا يبارك لك ✨","٩٩٪ قريبة إن شاء الله 🤍","مهمة وراها مهمة، وأنت قدّها 💪","اتأكد إنك ذاكرتها فعلًا مش بس خلّصتها 🌱"];
+var ST2=["الاسترجاع النشط: اقفل الكتاب واكتب كل اللي فاكره عن الدرس، وبعدين راجع الناقص. ده أقوى من إعادة القراءة.","التكرار المتباعد: راجع الدرس بعد يوم، وبعد ٣ أيام، وبعد أسبوع، كده بيثبت.","طريقة فاينمان: اشرح الدرس بصوت عالي بكلام بسيط كأنك بتشرحه لواحد أصغر منك، واللي تتلخبط فيه هو اللي محتاج مذاكرة.","ابدأ بحل أسئلة بدري، مش في الآخر. السؤال بيوريك فاهم ولا لأ.","ابدأ بالمادة الصعبة وأنت نشيط، والسهلة في الآخر.","اكتب غلطاتك في كراسة واحدة وراجعها قبل الامتحان. الغلطة المكتوبة مبتتكررش.","لما تفهم ماتحفظش. الفهم أسرع وبيثبت أكتر.","حوّل الدرس لأسئلة: إيه؟ ليه؟ إزاي؟ ده بيبدّل الحفظ بفهم.","نوم ٦–٨ ساعات بيثبّت اللي ذاكرته. السهر بيضيّع نص المجهود.","اشرب مية وكُل أكل خفيف وقت المذاكرة، الأكل التقيل بيجيب نعاس.","حرّك جسمك ٥ دقايق بين الجلسات: مشي أو تمدد.","اقفل الموبايل أو سيبه في أوضة تانية، وخلّي مكانك نضيف ومرتّب.","اكتب ٣ حاجات بس هتنجزها النهاردة، وركّز عليهم.","لو علقت في نقطة ٢٠ دقيقة، علّم عليها وكمّل، وارجع لها بعدين أو اسأل مدرسك.","اكتب القوانين والمعادلات بإيدك، الكتابة بتثبّت.","اعمل ملخص صفحة واحدة لكل باب، هتشكر نفسك وقت المراجعة.","حلّ نماذج امتحانات بوقت محدد، وراجع كل غلطة. لازم تعرف الحل وبسرعة كمان.","المراجعة النهائية بتبقى على الملخصات والأخطاء، مش على الكتاب كله من أول وجديد.","فيزياء: افهم القانون جاي منين ووحداته، وبعدين حل مسائل كتير، لأن المسائل هي الفيزياء.","فيزياء: ارسم شكل لكل مسألة، نص الحل بيبان في الرسم. وراجع الوحدات، كتير من الأخطاء بتيجي منها.","كيمياء: اتأكد من موازنة المعادلات، ودرّب المسائل كل يوم. والنظري اعمله جداول مقارنة صغيرة.","أحياء: ارسم الأشكال من غير ما تبص عليها، وربط الأجزاء ببعض (الهرمون ← العضو ← التأثير) أسهل من حفظها منفصلة.","عربي: النحو بالتطبيق مش بالحفظ، والإملاء بكتابة قطعة قصيرة كل يوم.","عربي: اقرا النص بصوت عالي وحدد الفكرة والصورة قبل ما تحفظ.","إنجليزي: ٥ كلمات جديدة كل يوم وجُمل بيهم، مش قايمة حفظ بس. واقرا نص قصير كل يوم ولخّصه في جملتين."];
+var CHL=["اشرح درس النهاردة بصوت عالي في ٣ دقايق من غير ما تبص في الكتاب.","٢٥ دقيقة من غير موبايل خالص، وبعدها راحة ٥ دقايق.","اكتب ٣ أسئلة امتحان من دماغك عن الدرس، وحلّها.","ارسم خريطة ذهنية لباب واحد في ١٠ دقايق.","راجع ٥ غلطات قديمة من كراسة أخطائك.","خلّص أصعب مهمة قبل الضهر.","ذاكر درس جديد ٤٥ دقيقة بتركيز، وبعدها اقفل الكتاب وراجع من ذاكرتك.","علّم على نقطة صعبة النهاردة وحلّها بنفسك لحد ما تفهمها."];
+var DOC=["كل ساعة بتذاكرها دلوقتي بتقرّبك من يوم تقول فيه: أنا دكتور، وبنفع الناس.","الطريق طويل وأول خطوة فيه النهاردة. خطوة صغيرة كل يوم كفاية.","وأنت بتذاكر الأحياء والكيمياء، افتكر إنك بتبني الأساس اللي هتعالج بيه ناس بعدين.","الخير اللي هتعمله كدكتور بيبدأ من تعبك دلوقتي.","كل درجة بتفرق، وكل يوم التزام بيفرق أكتر."];
+var ENC2=["اللي فات فات، ابدأ من النهاردة وبسّط الخطوات.","٣ شهور كفاية لو التزمت يوم بيوم.","لو يوم قصّرت فيه، كمّل من بكره ومتحمّلش نفسك فوق طاقتها.","قارن نفسك بنفسك امبارح، مش بحد تاني.","راحتك جزء من الخطة، مش وقت ضايع."];
+var Q2=[["ومن يتوكل على الله فهو حسبه","الطلاق ٣"],["فإن مع العسر يسرا","الشرح ٥"],["ادعوني أستجب لكم","غافر ٦٠"],["إنا لا نضيع أجر من أحسن عملا","الكهف ٣٠"],["والذين جاهدوا فينا لنهدينهم سبلنا","العنكبوت ٦٩"],["يرفع الله الذين آمنوا منكم والذين أوتوا العلم درجات","المجادلة ١١"],["أحب الأعمال إلى الله أدومها وإن قل","متفق عليه"],["إنما الأعمال بالنيات","متفق عليه"]];
+function TG(tag,a){return a.map(function(z){return typeof z==="string"?[z,"",tag]:[z[0],z[1],tag]})}
+var POOL=TG("تشجيع",ENC).concat(TG("تشجيع",ENC2),TG("تذكير",Q),TG("تذكير",Q2),TG("نصيحة",TIPS.map(function(a){return a[0]+" "+a[1]+": "+a[2]})),TG("نصيحة",ST2),TG("تحدي اليوم",CHL),TG("لدكتور المستقبل",DOC));
+var RI=Math.floor(Math.random()*POOL.length),TT=0;
+var START=new Date(2026,10,16),SUB={p:["⚡","فيزياء","٦٠ درجة"],a:["📖","عربي","٨٠ درجة"],b:["🧬","أحياء وجيولوجيا","٧٠ درجة"],e:["🔤","إنجليزي","٦٠ درجة"],c:["🧪","كيمياء","٦٠ درجة"]};
+var TK=[["p1","p","كيرشوف ٢",60,0,1],["p2","p","الفيض المغناطيسي",75,1,1],["p3","p","المجال المغناطيسي لسلك ٢",75,0,2],["p4","p","المجال المغناطيسي لدائرة مغلقة",75,0,3],["p5","p","المجال المغناطيسي لملف لولبي",75,0,4],["p6","p","القوة المغناطيسية",90,0,5],["p7","p","عزم الازدواج",90,0,6],["p8","p","مراجعة وامتحان الفصل الأول",90,0,9],["p9","p","عمل ملخص الفيزياء",60,0,10],
+["a3","a","محاضرة ٣",90,0,3],["a4","a","محاضرة ٤",90,0,3],["a5","a","محاضرة ٥",90,0,4],["a6","a","محاضرة ٦",90,0,5],["a7","a","محاضرة ٧",90,0,6],["a8","a","محاضرة ٨",90,1,2],["a9","a","محاضرة ٩",90,0,7],["a10","a","محاضرة ١٠",90,0,8],["a1","a","مشاهدة مراجعة ١",60,0,9],["a2","a","مراجعة إملاء ٢",45,0,9],
+["b1","b","بداية التكاثر اللاجنسي",45,1,1],["b2","b","تكاثر لاجنسي: محاضرة ١",75,0,2],["b3","b","تكاثر لاجنسي: محاضرة ٢",75,0,4],["b4","b","تكاثر لاجنسي: محاضرة ٣",75,0,8],["b5","b","هرمونات: محاضرة ٢",75,0,5],["b6","b","هرمونات: محاضرة ٣",75,0,6],["b7","b","هرمونات: محاضرة ٤",75,0,7],["b8","b","مراجعة الوراثة والهرمونات وامتحان عليها",90,0,10],
+["e1","e","Unit 4",60,1,1],["e2","e","حفظ كلمات ربع المنهج",45,0,2],["e3","e","ملخص ومذاكرة Grammar ربع المنهج",60,0,4],["e4","e","مذاكرة Chapter 1",45,0,5],["e5","e","مذاكرة Chapter 2",45,0,6],["e6","e","مذاكرة Chapter 3",45,0,7],["e7","e","مذاكرة Chapter 4",45,0,8],["e8","e","Unit 5",60,0,9],
+["c1","c","نظري الباب الثاني + مسائل",120,1,1],["c2","c","مراجعة الباب الأول",60,0,7],["c3","c","حل كتاب الامتحان اللي ما اتحلش",90,0,8],["c4","c","حل الكتاب المنزلي",60,0,9]];
+var D={},P={},cur=new Date(),tab="t",blk=null,full=0,run=-1,runKey="",last=0,cnt=0,qo=0,OP={},nsub="p",ntxt="",KEY="muhasaba_v2";
+try{D=JSON.parse(localStorage.getItem(KEY)||localStorage.getItem("muhasaba_v1")||"{}")}catch(e){D={}}
+try{P=JSON.parse(localStorage.getItem("muhasaba_plan")||"{}")}catch(e){P={}}
+function save(){try{localStorage.setItem(KEY,JSON.stringify(D));localStorage.setItem("muhasaba_plan",JSON.stringify(P))}catch(e){}}
+function ini(){if(!P.d)P.d={p1:1};if(!P.m)P.m={};if(!P.n)P.n=[];if(!P.t)P.t={};if(!P.nt)P.nt=[];if(!P.sn)P.sn=[]}
+function ds(d){return d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0")}
+function esc(s){return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;")}
+function day(k){if(!D[k])D[k]={};var x=D[k],i;
+if(!x.a)x.a=[0,0,0,0,0,0];if(!x.p)x.p=[];if(!x.f)x.f=[];if(!x.q)x.q=[0,0,0,0,0];if(!x.s)x.s={};if(!x.st)x.st=[0,0,0,0,0,0];
+if(x.t==null)x.t=0;if(x.du==null)x.du=0;if(x.m==null)x.m=0;if(x.e==null)x.e=0;
+for(i=0;i<5;i++){if(!x.p[i])x.p[i]=[0,0,0];if(!x.f[i])x.f[i]=[0,0,0]}return x}
+function X(){return day(ds(cur))}
+function sec(k){var x=D[k];if(!x||!x.st)return 0;return x.st.reduce(function(a,b){return a+b},0)}
+function wp(k){var x=day(k),t=0,s=0,i,j;
+for(i=0;i<6;i++){t+=AD[i][1];s+=Math.min(x.a[i],AD[i][1])}
+for(i=0;i<5;i++){for(j=0;j<3;j++){t+=33;s+=Math.min(x.p[i][j],33)}t+=4;s+=Math.min(x.q[i],4)}
+t+=6;s+=Math.min(x.t,6);t+=100;s+=(x.m?50:0)+(x.e?50:0);t+=70;for(var z in x.s)if(x.s[z])s+=10;
+t+=30;s+=Math.min(x.du/300,1)*30;return [s,t]}
+function pct(k){if(!D[k])return 0;var w=wp(k);return Math.round((w[0]+Math.min(sec(k)/TOT,1)*200)/(w[1]+200)*100)}
+function wpc(k){if(!D[k])return 0;var w=wp(k);return Math.round(w[0]/w[1]*100)}
+function fmt(n){var h=Math.floor(n/3600),m=Math.floor(n%3600/60),s=n%60;return h+":"+String(m).padStart(2,"0")+":"+String(s).padStart(2,"0")}
+function streak(){var n=0,d=new Date();if(sec(ds(d))<WIN)d.setDate(d.getDate()-1);while(sec(ds(d))>=WIN){n++;d.setDate(d.getDate()-1)}return n}
+function msg(s){var h=s/3600;
+if(h===0)return "ابدأ باسم الله… أصعب لحظة هي أول لحظة.";
+if(h<3)return "بداية طيبة 🌱 كمّل واستعن بالله ولا تعجز.";
+if(h<6)return "ماشي كويس 💪 خلّيك ثابت.";
+if(h<9)return "قربت جدًا ✨ كمّل.";
+if(h<10)return "يوم ناجح 🏆 ما شاء الله!";
+return "أتممت ١٠ ساعات 🎉 اللهم بارك لك في علمك."}
+function ch(i,v){var x=X();x.a[i]=Math.max(0,Math.min(AD[i][1],x.a[i]+v));save();render()}
+function pp(i,j,v){var x=X();x.p[i][j]=Math.max(0,Math.min(33,x.p[i][j]+v));save();render()}
+function fo(i,j,el){X().f[i][j]=el.checked?1:0;save();render()}
+function qq(i,v){var x=X();x.q[i]=Math.max(0,Math.min(4,x.q[i]+v));save();render()}
+function tt(v){var x=X();x.t=Math.max(0,Math.min(6,x.t+v));save();render()}
+function tg(w){var x=X();x[w]=x[w]?0:1;save();render()}
+function sn(w){var x=X();x.s[w]=x.s[w]?0:1;save();render()}
+function dd(v){var x=X();x.du=Math.max(0,x.du+v);save();render()}
+function tm(){if(run===0&&runKey===ds(cur)){run=-1;save()}else{run=0;runKey=ds(cur);last=Date.now()}render()}
+function tmd(){if(run==="d"&&runKey===ds(cur)){run=-1;save()}else{run="d";runKey=ds(cur);last=Date.now()}render()}
+function dn(d){return Math.round((new Date(d.getFullYear(),d.getMonth(),d.getDate())-START)/864e5)+1}
+function tmin(t){return P.m[t[0]]!=null?P.m[t[0]]:t[3]}
+function byId(id){return TK.filter(function(a){return a[0]===id})[0]}
+function toast(m,ms){var e=document.getElementById("ts");e.textContent=m;e.classList.add("show");clearTimeout(TT);TT=setTimeout(function(){e.classList.remove("show")},ms||2000)}
+function cheer(){toast(CH[Math.floor(Math.random()*CH.length)])}
+function pk(id){ini();P.d[id]=P.d[id]?0:1;save();render();if(P.d[id]){cheer();beep()}}
+function pm(id,v){ini();P.m[id]=Math.max(15,tmin(byId(id))+v);save();render()}
+function setBlk(b){blk=b;full=0;render()}
+function setFull(v){full=v;render()}
+function setNs(s){var e=document.getElementById("ni");if(e)ntxt=e.value;nsub=s;render()}
+function nadd(){var e=document.getElementById("ni"),v=(e?e.value:"").trim();if(!v)return;ini();P.n.push({id:Date.now(),s:nsub,t:v,d:ds(cur),o:0});ntxt="";save();render()}
+function nk(id){ini();var w=0;P.n.forEach(function(a){if(a.id===id){a.o=a.o?0:1;w=a.o}});save();render();if(w){cheer();beep()}}
+function rq(){var n,L=PL();do{n=Math.floor(Math.random()*L.length)}while(n===RI%L.length&&L.length>1);RI=n;render()}
+function msgCard(){var L=PL(),m=L[RI%L.length];return '<div class="quote" onclick="rq()">'+(m[2]?'<div><span class="chip">'+m[2]+'</span></div>':'')+'<q>'+m[0]+'</q>'+(m[1]?'<small>'+m[1]+'</small>':'')+'</div>'}
+function nr(id){ini();P.n=P.n.filter(function(a){return a.id!==id});save();render()}
+function nq(){qo++;render()}
+function setTab(t){tab=t;render();window.scrollTo(0,0)}
+function ok(w,l,v){return '<div class="card'+(v?' done':'')+'"><div class="row" style="margin:0"><div class="t">'+l+'</div><div class="btns"><button class="p" onclick="'+w+'">'+(v?'تم ✓':'تم؟')+'</button></div></div></div>'}
+var ED="",CTX={p1:"التيار الكهربي وقانونا كيرشوف (الفصل الأول)",p2:"التأثير المغناطيسي للتيار الكهربي (الفصل الثاني)",p3:"التأثير المغناطيسي للتيار الكهربي (الفصل الثاني)",p4:"التأثير المغناطيسي للتيار الكهربي (الفصل الثاني)",p5:"التأثير المغناطيسي للتيار الكهربي (الفصل الثاني)",p6:"التأثير المغناطيسي للتيار الكهربي (الفصل الثاني)",p7:"التأثير المغناطيسي للتيار الكهربي (الفصل الثاني)"};
+function tn(t){return P.t&&P.t[t[0]]?P.t[t[0]]:t[2]}
+function ed(id){ED=id;render();var e=document.getElementById("ei");if(e)e.focus()}
+function sv(id){var e=document.getElementById("ei"),v=e?e.value.trim():"";ini();if(v&&v!==byId(id)[2])P.t[id]=v;else delete P.t[id];ED="";save();render()}
+function row(t,late){var id=t[0],d=P.d[id],S=SUB[t[1]];
+if(ED===id)return '<div class="tk"><div class="tx"><input id="ei" class="ei" value="'+esc(tn(t))+'" onkeydown="if(event.key===\'Enter\')sv(\''+id+'\')"></div><button class="dn on" onclick="sv(\''+id+'\')">حفظ</button></div>';
+return '<div class="tk'+(d?' done':'')+(late&&!d?' late':'')+'"><div class="tx"><div>'+(t[4]?'❗ ':'')+esc(tn(t))+' <button class="x" style="font-size:13px" onclick="ed(\''+id+'\')">✏️</button></div><small>'+S[0]+' '+S[1]+' · ⏱ ≈ '+tmin(t)+' د'+(CTX[id]?'<br>'+CTX[id]:'')+'</small></div><button class="dn'+(d?' on':'')+'" onclick="pk(\''+id+'\')">'+(d?'✓ تم':'تم')+'</button></div>'}
+function planBox(){var tot=0,dm=0,rem=0,td=dn(new Date());
+TK.forEach(function(t){var m=tmin(t);tot+=m;if(P.d[t[0]])dm+=m;else rem+=m});
+var pc=Math.round(dm/tot*100),dl=td<1?10:Math.max(1,11-td);
+var cd=td<1?"الخطة تبدأ ١٦ نوفمبر":td>10?"انتهت المهلة، كمّل اللي فاضل":td===10?"النهاردة آخر يوم (٢٥ نوفمبر)":"باقي "+(10-td)+" يوم على ٢٥ نوفمبر";
+return '<div class="box"><div style="display:flex;justify-content:space-between"><b>📚 المتراكم: '+cd+'</b><b>'+pc+'%</b></div><div class="bar"><i style="width:'+pc+'%"></i></div><div style="font-size:12.5px;color:var(--mut);margin-top:6px">فاضل ≈ '+(rem/60).toFixed(1)+' ساعة، يعني ≈ '+(rem/60/dl).toFixed(1)+' ساعة في اليوم</div></div>'}
+function oldBlock(){ini();var h=planBox(),n=dn(cur),k;
+if(full){h+='<button class="link" onclick="setFull(0)">‹ رجوع لمهام اليوم</button>';
+for(k in SUB){var S=SUB[k],a=0,b=0;TK.forEach(function(t){if(t[1]===k){b++;if(P.d[t[0]])a++}});h+='<h2>'+S[0]+' '+S[1]+' ('+S[2]+') · '+a+'/'+b+'</h2>';TK.forEach(function(t){if(t[1]===k)h+=row(t,0)})}
+return h+'<div class="msg">الأوقات تقديرية. وراجع الخطوط اللي كانت صعبة القراءة في ورقتك.</div>'}
+var dy=Math.min(Math.max(n,1),10),late=[],tdy=[];
+TK.forEach(function(t){if(t[5]<dy&&!P.d[t[0]])late.push(t);if(t[5]===dy)tdy.push(t)});
+h+='<h2>مهام اليوم (يوم '+dy+' من ١٠)</h2>';
+tdy.forEach(function(t){h+=row(t,0)});
+if(late.length){h+='<h2 class="late">متأخرة ('+late.length+') — خلّصها الأول</h2>';late.forEach(function(t){h+=row(t,1)})}
+return h+'<button class="link" onclick="setFull(1)">شوف الخطة كلها حسب المادة ›</button><br><button class="link" onclick="setBlk(\'n\')">عندك درس جديد؟ ضيفه ›</button>'}
+function newBlock(){ini();var h="",k,cd=ds(cur);
+h+='<div class="msg" style="margin-top:0">اكتب أي محاضرة أو درس جديد هتذاكره النهاردة، وعلّم عليه لما تخلّصه.</div><button class="link" onclick="setBlk(\'o\')">مفيش جديد النهاردة؟ كمّل المتراكم ›</button>';
+h+='<div class="sub">';for(k in SUB)h+='<button class="'+(nsub===k?'on':'')+'" onclick="setNs(\''+k+'\')">'+SUB[k][0]+' '+SUB[k][1]+'</button>';
+h+='</div><div class="add"><input id="ni" placeholder="مثال: محاضرة الدوائر الكهربية" value="'+esc(ntxt)+'" onkeydown="if(event.key===\'Enter\')nadd()"><button id="mc2" style="background:var(--gold)" onclick="mic(\'ni\')">🎤</button><button onclick="nadd()">إضافة</button></div><div id="nm2" style="font-size:12.5px;color:var(--mut)"></div>';
+var L=P.n.filter(function(a){return a.d===cd||(!a.o&&a.d<cd)});
+if(!L.length)h+='<div class="card" style="color:var(--mut)">لسه مفيش حاجة مكتوبة 🌱</div>';
+L.forEach(function(a){var S=SUB[a.s];h+='<div class="tk'+(a.o?' done':'')+(!a.o&&a.d<cd?' late':'')+'"><div class="tx"><div>'+esc(a.t)+'</div><small>'+S[0]+' '+S[1]+(a.d<cd?' · من يوم سابق':'')+' · <a href="#" style="color:var(--mut)" onclick="nr('+a.id+');return false">حذف</a></small></div><button class="dn'+(a.o?' on':'')+'" onclick="nk('+a.id+')">'+(a.o?'✓ تم':'تم')+'</button></div>'});
+return h}
+function todayTab(){var x=X(),h="",b=blk||(new Date().getHours()<9?"o":"n"),s=sec(ds(cur)),on=run===0&&runKey===ds(cur),w=wpc(ds(cur));
+h+=(friShow(cur)?friCard():"")+msgCard()+'<div class="now">📅 '+schLine(cur)+'</div>';
+h+='<div class="box"><div class="row" style="margin:0"><span>⏱ مذاكرة اليوم</span><b id="sm">'+(s/3600).toFixed(1)+' / ١٠ ساعات</b></div><div class="big" id="sv" dir="ltr">'+fmt(s)+'</div><div class="bar"><i id="sb" style="width:'+Math.min(100,s/TOT*100)+'%"></i></div><div class="row"><span id="sg" style="font-size:13px;color:var(--mut)">'+msg(s)+'</span><div class="btns"><button class="p'+(on?' run':'')+'" onclick="tm()">'+(on?'⏸ إيقاف':'▶ ابدأ')+'</button></div></div><div style="font-size:12.5px;color:var(--mut);margin-top:6px">🔥 '+streak()+' يوم متتالي (اليوم الناجح ٩ ساعات فأكتر)</div></div>';
+h+='<div class="seg"><button class="'+(b==="o"?'on':'')+'" onclick="setBlk(\'o\')">🌙 القديم<small>قبل الفجر ← ٩ الصبح</small></button><button class="'+(b==="n"?'on':'')+'" onclick="setBlk(\'n\')">☀️ الجديد<small>من ٩ الصبح (المحاضرات)</small></button></div>';
+h+=b==="o"?oldBlock():newBlock();
+h+='<div class="box" style="margin-top:14px"><div class="row" style="margin:0"><span>🕌 عبادات اليوم <b>'+w+'%</b></span><button class="link" onclick="setTab(\'w\')">افتح ›</button></div><div class="bar"><i style="width:'+w+'%"></i></div></div>';
+return h+tlHtml()+notesHtml()}
+var TL=[["🌙","قبل الفجر","قيام ووتر + ٥ دقايق دعاء، وبعدها جلسة ١: مذاكرة القديم (٢ ساعة)"],["🕌","الفجر","صلاة + أذكار الصباح + ٦ صفحات قرآن مع المختصر، وبعدها جلسة ٢: القديم (٢ ساعة) لحد ٩"],["☀️","٩ الصبح ← الظهر","جلسة ٣: الجديد أو المحاضرات (٢ ساعة) + ضحى ٤ ركعات + راحة قصيرة"],["🍽️","الظهر","صلاة وسنن، غدا، قيلولة ٢٠–٣٠ دقيقة، وبعدها جلسة ٤ (٢ ساعة)"],["🌇","العصر","أذكار المساء + مشي أو رياضة خفيفة، وبعدها جلسة ٥ (ساعة)"],["🌃","المغرب والعشاء","صلاة وسنن، عشاء، جلسة ٦: مراجعة اليوم وتجهيز بكرة (ساعة)، أذكار، ونوم بدري"]];
+function tlHtml(){var h='<details'+(OP.tl?' open':'')+' ontoggle="OP.tl=this.open"><summary>🕐 شكل يومك على مدار ٢٤ ساعة (اقتراح)</summary>';
+TL.forEach(function(a){h+='<div class="tl"><div style="font-size:22px">'+a[0]+'</div><div><b>'+a[1]+'</b><span>'+a[2]+'</span></div></div>'});
+return h+'<div class="msg" style="margin:8px 0">الجلسات الست = ٢+٢+٢+٢+١+١ = ١٠ ساعات مذاكرة، والباقي عبادة وأكل وراحة ونوم. ظبّط الأوقات على مواعيد صلواتك ونظامك.</div></details>'}
+var NT="",REC=null,AC=null;
+function sOn(){return P.snd!==0}
+function snd(){P.snd=sOn()?0:1;save();setT("sd",sOn()?"🔊":"🔇");if(sOn())beep()}
+function beep(){if(!sOn())return;try{AC=AC||new (window.AudioContext||window.webkitAudioContext)();AC.resume();[660,880,1100].forEach(function(f,i){var o=AC.createOscillator(),g=AC.createGain(),t=AC.currentTime+i*0.13;o.type="sine";o.frequency.value=f;g.gain.setValueAtTime(0.0001,t);g.gain.exponentialRampToValueAtTime(0.18,t+0.02);g.gain.exponentialRampToValueAtTime(0.0001,t+0.22);o.connect(g);g.connect(AC.destination);o.start(t);o.stop(t+0.25)})}catch(e){}}
+function nta(){var ta=document.getElementById("nt"),v=ta?ta.value.trim():"";if(!v)return;ini();P.nt.push({id:Date.now(),t:v,d:new Date().toLocaleDateString("ar-EG",{day:"numeric",month:"long"})});NT="";save();render()}
+function ndel(id){ini();P.nt=P.nt.filter(function(a){return a.id!==id});save();render()}
+function mic(t){var SR=window.SpeechRecognition||window.webkitSpeechRecognition,ta=document.getElementById(t),st=t==="nt"?"nm":"nm2",bt=t==="nt"?"mc":"mc2",lb=t==="nt"?"🎤 إملاء":"🎤";if(!ta)return;
+if(REC){REC.stop();return}
+if(!SR){setT(st,"الإملاء الصوتي مش مدعوم هنا. جرّب Chrome، أو استخدم ميكروفون كيبورد الموبايل.");return}
+var base=ta.value;try{REC=new SR();REC.lang="ar-EG";REC.interimResults=true;
+REC.onresult=function(e){var x="";for(var i=0;i<e.results.length;i++)x+=e.results[i][0].transcript;ta.value=(base?base+" ":"")+x;if(t==="nt")NT=ta.value;else ntxt=ta.value};
+REC.onerror=function(e){setT(st,e.error==="not-allowed"?"المايك مش مسموح، فعّل الإذن من إعدادات المتصفح.":"حصلت مشكلة في الصوت ("+e.error+")")};
+REC.onend=function(){REC=null;setT(bt,lb)};
+REC.start();setT(bt,"⏹");setT(st,"بسمع… اتكلم")}catch(x){REC=null;setT(st,"الإملاء الصوتي مش متاح")}}
+var PM=[["لقد جاءكم رسول من أنفسكم عزيز عليه ما عنتم حريص عليكم بالمؤمنين رؤوف رحيم","التوبة ١٢٨","حب النبي ﷺ لنا"],["وما أرسلناك إلا رحمة للعالمين","الأنبياء ١٠٧","حب النبي ﷺ لنا"],["رفع النبي ﷺ يديه وقال: «اللهم أمتي أمتي» وبكى، وده كان حبه لك ولأمته.","رواه مسلم","حب النبي ﷺ لنا"],["«وإني اختبأت دعوتي شفاعة لأمتي يوم القيامة»: ادّخر ﷺ دعوته لنا.","متفق عليه","حب النبي ﷺ لنا"],["قال ﷺ: «وددت أنا قد رأينا إخواننا… إخواننا الذين لم يأتوا بعد»، وهو يقصد أمّته من بعده، يعني أنت.","رواه مسلم","حب النبي ﷺ لنا"],["من صلى علي صلاة واحدة صلى الله عليه بها عشرا","رواه مسلم","صلاة على النبي ﷺ"],["إن من أفضل أيامكم يوم الجمعة، فأكثروا علي من الصلاة فيه","رواه أبو داود","صلاة على النبي ﷺ"],["إن الله وملائكته يصلون على النبي، يا أيها الذين آمنوا صلوا عليه وسلموا تسليما","الأحزاب ٥٦","صلاة على النبي ﷺ"],["البخيل من ذكرت عنده فلم يصل علي","رواه الترمذي","صلاة على النبي ﷺ"],["من قرأ سورة الكهف يوم الجمعة أضاء له من النور ما بين الجمعتين","رواه الحاكم والبيهقي","سورة الكهف"],["المرء مع من أحب","متفق عليه","حبّنا للنبي ﷺ"],["لا يؤمن أحدكم حتى أكون أحب إليه من والده وولده والناس أجمعين","رواه البخاري","حبّنا للنبي ﷺ"],["اللهم صلِّ وسلّم وبارك على سيدنا محمد وعلى آله وصحبه","","صلاة على النبي ﷺ"],["خد نفس وصلِّ على النبي ﷺ دلوقتي مرة، وكمّل يومك.","","صلاة على النبي ﷺ"],["نبيّك ﷺ فكّر فيك ودعا لأمّته؛ ردّ له الحب بالصلاة عليه.","","حب النبي ﷺ لنا"]];
+function PL(){return fri(cur)?PM:POOL}
+function fri(d){var g=d.getDay(),n=new Date();return g===5||(g===4&&ds(d)===ds(n)&&n.getHours()>=17)}
+function friShow(d){var g=d.getDay(),n=new Date();return g===5||(g===4&&(ds(d)!==ds(n)||n.getHours()>=16))}
+function FK(d){var e=new Date(d);if(d.getDay()===4)e.setDate(e.getDate()+1);return ds(e)}
+function FRr(){ini();if(!P.fr)P.fr={};var k=FK(cur);if(!P.fr[k])P.fr[k]={c:0,k:0};return P.fr[k]}
+function ar(n){return n.toLocaleString("ar-EG")}
+function fc(v){var f=FRr(),o=f.c;f.c=Math.max(0,f.c+v);save();render();if(o<12000&&f.c>=12000){beep();toast("ما شاء الله، أتممت ١٢ ألف صلاة على النبي ﷺ 🌹",6000)}}
+function fk(){var f=FRr();f.k=f.k?0:1;save();render();if(f.k){cheer();beep()}}
+function fnt(){if(!window.Notification){setT("fm","المتصفح مش بيدعم التنبيهات");return}try{Notification.requestPermission().then(function(r){P.fn=r==="granted"?1:0;save();render();setT("fm",r==="granted"?"اتفعّلت ✓":"الإذن مش مسموح، فعّله من إعدادات المتصفح")})}catch(e){setT("fm","التنبيهات مش متاحة هنا")}}
+function fnote(){if(!fri(new Date()))return;var m=PM[Math.floor(Math.random()*PM.length)];toast(m[0],6000);if(P.fn===1){try{if(window.Notification&&Notification.permission==="granted")new Notification("ﷺ",{body:m[0]})}catch(e){}}}
+function friCard(){var f=FRr(),h='<div class="card" style="border-color:var(--gold);background:linear-gradient(135deg,var(--gl),var(--card))"><div class="t">🌹 يوم الجمعة: ١٢ ألف صلاة على النبي ﷺ</div><div style="font-size:12.5px;color:var(--mut)">من مغرب الخميس لمغرب الجمعة'+(cur.getDay()===4?' — بتبدأ من المغرب بإذن الله':'')+'</div><div class="big">'+ar(f.c)+'<small style="font-size:14px;color:var(--mut)"> / ١٢٬٠٠٠</small></div><div class="bar"><i style="width:'+Math.min(100,f.c/120)+'%"></i></div><div style="text-align:center;margin:10px 0;font-weight:600">اللهم صلِّ وسلّم وبارك على سيدنا محمد ﷺ</div><div class="row"><div class="btns"><button onclick="fc(-100)">−١٠٠</button><button onclick="fc(10)">+١٠</button><button onclick="fc(100)">+١٠٠</button><button onclick="fc(1000)">+١٠٠٠</button></div><div class="btns"><button class="p" onclick="fc(1)">+١</button></div></div><div style="font-size:12.5px;color:var(--mut);margin-top:8px">المتوسط المطلوب ≈ ٥٠٠ في الساعة لو وزّعتها على ٢٤ ساعة.</div></div>';
+h+=ok("fk()","📖 سورة الكهف",f.k);
+h+='<div class="msg" style="margin-top:6px"><button class="link" onclick="fnt()">🔔 فعّل التنبيهات'+(P.fn===1?' (مفعّلة ✓)':'')+'</button><div id="fm" style="font-size:12.5px;color:var(--mut)">بتظهر لك رسالة عن النبي ﷺ كل ٢٠ دقيقة طول ما الصفحة مفتوحة.</div></div>';
+return h}
+function notesHtml(){ini();var h='<details'+(OP.nt?' open':'')+' ontoggle="OP.nt=this.open"><summary>📝 ملاحظات ('+P.nt.length+')</summary><textarea id="nt" class="ta" placeholder="اكتب ملاحظة، أو اضغط 🎤 وقولها بصوتك...">'+esc(NT)+'</textarea><div class="row"><div class="btns"><button id="mc" onclick="mic(\'nt\')">🎤 إملاء</button></div><div class="btns"><button class="p" onclick="nta()">حفظ</button></div></div><div id="nm" style="font-size:12.5px;color:var(--mut);margin-top:4px"></div>';
+P.nt.slice().reverse().forEach(function(a){h+='<div class="tl"><div style="flex:1;white-space:pre-wrap;font-size:14.5px">'+esc(a.t)+'<div style="font-size:11.5px;color:var(--mut)">'+a.d+'</div></div><button class="x" onclick="ndel('+a.id+')">✕</button></div>'});
+return h+'</details>'}
+function worshipTab(){var x=X(),h="",i,j,on2=run==="d"&&runKey===ds(cur);
+function D_(k,t,body){return '<details'+(OP[k]?' open':'')+' ontoggle="OP[\''+k+'\']=this.open"><summary>'+t+'</summary>'+body+'</details>'}
+var a='<div class="card'+(x.t>=6?' done':'')+'"><div class="t">📖 بعد الفجر: ٦ صفحات قرآن مع مختصر التفسير</div><div class="row"><div class="cnt">'+x.t+' <small>/ ٦'+(x.t>=6?' ✓':'')+'</small></div><div class="btns"><button onclick="tt(-1)">−</button><button class="p" onclick="tt(1)">+١</button></div></div></div>';
+a+=ok("tg('m')","🌅 أذكار الصباح",x.m)+ok("tg('e')","🌇 أذكار المساء (بعد العصر)",x.e);
+a+='<div class="card'+(x.du>=300?' done':'')+'"><div class="t">🤲 ٥ دقايق دعاء'+(x.du>=300?' ✓':'')+'</div><div class="big" id="dv" dir="ltr">'+fmt(x.du)+'</div><div class="bar"><i id="db" style="width:'+Math.min(100,x.du/3)+'%"></i></div><div class="row"><div class="btns"><button onclick="dd(-60)">−١د</button><button onclick="dd(60)">+١د</button></div><div class="btns"><button class="p'+(on2?' run':'')+'" onclick="tmd()">'+(on2?'⏸ إيقاف':'▶ ابدأ')+'</button></div></div></div>';
+h+=D_("a","🌅 الصباح والمساء والدعاء",a);
+var b="";SN.forEach(function(z){b+=ok("sn('"+z[0]+"')",z[1],x.s[z[0]])});h+=D_("b","🌙 السنن والنوافل",b);
+var c="";for(i=0;i<6;i++){var n=x.a[i],t=AD[i][1];c+='<div class="card'+(n>=t?' done':'')+'"><div class="t">'+AD[i][0]+'</div><div class="row"><div class="cnt">'+n+' <small>/ '+t+(n>=t?' ✓':'')+'</small></div><div class="btns"><button onclick="ch('+i+',-1)">−</button><button onclick="ch('+i+',10)">+١٠</button><button class="p" onclick="ch('+i+',1)">+١</button></div></div></div>'}
+h+=D_("c","📿 الأذكار اليومية",c);
+var d="";for(i=0;i<5;i++){d+='<div class="card"><b>بعد '+PR[i]+' <span class="chip">أول ١٠ بتركيز</span></b><div class="g" style="margin-top:6px">';
+for(j=0;j<3;j++){var q=x.p[i][j];d+='<div class="c'+(q>=33&&x.f[i][j]?' done':'')+'"><button class="tap" onclick="pp('+i+','+j+',1)">'+DK[j]+'<span class="n">'+q+'<small>/٣٣</small></span></button><button class="m" onclick="pp('+i+','+j+',-1)">− واحد</button><label><input type="checkbox" '+(x.f[i][j]?'checked':'')+' onchange="fo('+i+','+j+',this)"> بتركيز</label></div>'}
+d+='</div><div class="row"><div class="cnt" style="font-size:15px">📖 قرآن: '+x.q[i]+'<small> / ٤ صفحات'+(x.q[i]>=4?' ✓':'')+'</small></div><div class="btns"><button onclick="qq('+i+',-1)">−</button><button class="p" onclick="qq('+i+',1)">+١</button></div></div></div>'}
+return h+D_("d","🕌 بعد كل صلاة (٣٣×٣ + ٤ صفحات قرآن)",d)}
+/* ===== المواد + المساعد الصوتي + جدول الدروس ===== */
+var SB="p",SK="n",ANS="",AIT="",SIT="",VR=null;
+var DAYN=["الأحد","الاثنين","الثلاثاء","الأربعاء","الخميس","الجمعة","السبت"];
+var SCH={6:[["إنجليزي","e"],["فيزياء","p"]],0:[["عربي","a"],["كيمياء","c"]],1:[["أحياء","b"],["جيولوجيا","b"]],2:[["كيمياء","c"],["إنجليزي","e"]],3:[["عربي","a"],["فيزياء","p"]],4:[["أحياء","b"],["جيولوجيا","b"]]};
+var FO=[["كيمياء","c"],["فيزياء","p"],["عربي","a"]];
+var KN={n:"ملاحظة",f:"ممكن أنساها",m:"ملخص",x:"تمم",b:"متراكم"};
+var KP={n:"الملاحظات",f:"الحاجات اللي ممكن تنساها",m:"الملخصات",x:"التمم",b:"المتراكم"};
+var KI=[["n","📝 ملاحظات"],["f","🧠 ممكن أنساها"],["m","📄 ملخصات"],["x","➕ تمم"],["b","📌 متراكم"]];
+var PH={n:"اكتب ملاحظة...",f:"حاجة ممكن تنساها: قانون، معادلة، تاريخ...",m:"اكتب ملخص أو نقطة من الملخص...",x:"أي حاجة تانية...",b:"حاجة متراكمة عليك في المادة دي..."};
+var SKW={p:["فيزي"],c:["كيمي"],a:["عربي","نحو","بلاغه","نصوص"],e:["انجلي","english","انجليش"],b:["احياء","بيولوج","جيو"]};
+var AV={"ضيف":1,"اضف":1,"اضيف":1,"ضيفلي":1,"سجل":1,"سجللي":1,"اكتب":1,"دون":1,"حط":1,"ذكرني":1,"فكرني":1,"لاحظ":1,"زود":1};
+var HS={"في":1,"ف":1,"علي":1,"عن":1,"ل":1,"ماده":1,"ممكن":1,"اللي":1,"عندي":1};
+var KW={"ملخص":"m","ملخصات":"m","ملاحظه":"n","ملاحظات":"n","انساها":"f","انساه":"f","مهم":"f","متراكم":"b","متاخر":"b","ورايا":"b","تمم":"x","اضافي":"x"};
+
+function nz(s){return String(s).replace(/[\u064B-\u065F\u0670\u0640]/g,"").replace(/[أإآ]/g,"ا").replace(/ى/g,"ي").replace(/ة/g,"ه").replace(/[:،,.؟?!؛"]/g,"").replace(/\s+/g," ").trim().toLowerCase()}
+function findSub(t){var best=null,bi=1e9,k,j,x;for(k in SKW)for(j=0;j<SKW[k].length;j++){x=t.indexOf(SKW[k][j]);if(x>=0&&x<bi){bi=x;best=k}}return best}
+function subjHas(w){return findSub(w)!==null&&!/^(نحو|بلاغه|نصوص)$/.test(w)}
+function fd(s){var p=String(s).split("-");try{return new Date(+p[0],+p[1]-1,+p[2]).toLocaleDateString("ar-EG",{day:"numeric",month:"long"})}catch(e){return s}}
+
+function schLine(d){var g=d.getDay(),lb=ds(d)===ds(new Date())?"النهاردة ("+DAYN[g]+")":DAYN[g];
+if(g===5)return "دروس "+lb+": اختياري الصبح، اختار واحدة من: "+FO.map(function(a){return a[0]}).join(" أو ");
+return "دروس "+lb+": "+(SCH[g]||[]).map(function(a){return a[0]}).join(" ثم ")}
+function nxt(s){var n=new Date(),i,g,d,L,nm;for(i=0;i<8;i++){d=new Date(n);d.setDate(n.getDate()+i);g=d.getDay();
+var w=i===0?"النهاردة":i===1?"بكره":DAYN[g];
+if(g===5){if(FO.some(function(a){return a[1]===s}))return w+" (اختياري الصبح)";continue}
+L=(SCH[g]||[]).filter(function(a){return a[1]===s});
+if(L.length){nm=L.map(function(a){return a[0]}).join(" و");return w+": "+nm}}
+return "مفيش في الجدول"}
+
+function bl(s){ini();var n=dn(new Date()),dy=Math.min(Math.max(n,1),10),td=ds(new Date());
+var a=TK.filter(function(t){return t[1]===s&&!P.d[t[0]]&&(t[5]<dy||n>10)}),
+b=P.n.filter(function(z){return z.s===s&&!z.o&&z.d<td}),
+c=P.sn.filter(function(z){return z.s===s&&z.k==="b"&&!z.o});
+return {a:a,b:b,c:c,n:a.length+b.length+c.length}}
+function lines(s,kd){var r=[];ini();
+if(kd==="b"){var b=bl(s);b.a.forEach(function(t){r.push(tn(t))});b.b.concat(b.c).forEach(function(a){r.push(a.t)})}
+else P.sn.forEach(function(a){if(a.s===s&&a.k===kd)r.push(a.t)});
+return r}
+function cntK(s,kd){return P.sn.filter(function(z){return z.s===s&&z.k===kd&&!z.o}).length}
+
+function addCmd(raw,toks,nt,s){var i=0,kd=null,w,content;
+if(nt[0]==="ذكرني"||nt[0]==="فكرني")kd="f";
+while(i<toks.length){w=nt[i];
+if(AV[w]||HS[w]||subjHas(w)){}
+else if(KW[w]){kd=kd||KW[w]}
+else break;
+i++}
+content=toks.slice(i).join(" ").replace(/^[:،\-\s]+/,"");
+if(!s)s=SB;
+if(!content)return "قولي إيه اللي أضيفه. مثلاً: ضيف في "+SUB[s][1]+" ملاحظة ...";
+kd=kd||"n";
+ini();P.sn.push({id:Date.now(),s:s,k:kd,t:content,d:ds(new Date()),o:0});save();SB=s;SK=kd;
+return "تمام ✓ ضفت في "+SUB[s][1]+" ("+KN[kd]+"): "+content}
+
+function ask(raw){ini();var t=nz(raw),s=findSub(t),toks=String(raw).trim().split(/\s+/),nt=toks.map(nz),kd=null;
+if(!t)return "";
+if(AV[nt[0]])return addCmd(raw,toks,nt,s);
+if(/(جدول|النهارده|النهاردا|بكره|بكرا|دروس|حصص|الحصه|الدرس)/.test(t)){
+if(s)return SUB[s][1]+": "+nxt(s);
+var d=new Date();if(/بكره|بكرا/.test(t))d.setDate(d.getDate()+1);return schLine(d)}
+if(/ملخص/.test(t))kd="m";
+else if(/ملاحظ/.test(t))kd="n";
+else if(/(انسي|انساه|انساها|هنسي|افتكر)/.test(t))kd="f";
+else if(/تمم/.test(t))kd="x";
+else if(/(متراكم|متاخر|ورايا|فاضل|فاتني|عليا)/.test(t))kd="b";
+var A=s?[s]:Object.keys(SUB);
+if(kd){var out=[],any=0;
+A.forEach(function(k){var L=lines(k,kd);if(L.length){any=1;out.push(KP[kd]+" في "+SUB[k][1]+" ("+L.length+"):");L.slice(0,8).forEach(function(z){out.push("• "+z)});if(L.length>8)out.push("… وفي "+(L.length-8)+" كمان")}});
+return any?out.join("\n"):"مفيش "+KP[kd]+(s?" في "+SUB[s][1]:"")+" دلوقتي ✨"}
+if(!s&&!/(ايه|كل)/.test(t))return "ماعرفتش الأمر. جرّب: «ضيف في الكيمياء ملاحظة ...» أو «إيه المتراكم في الفيزياء؟» أو «إيه دروس النهاردة؟»";
+return A.map(function(k){return SUB[k][1]+": متراكم "+bl(k).n+"، ملاحظات "+cntK(k,"n")+"، ممكن أنساها "+cntK(k,"f")+"، ملخصات "+cntK(k,"m")+"، تمم "+cntK(k,"x")}).join("\n")}
+
+function say(t,f){if((!sOn()&&!f)||!window.speechSynthesis||!t)return;
+try{speechSynthesis.cancel();var u=new SpeechSynthesisUtterance(String(t).replace(/[•]/g,"").replace(/\n+/g,". "));u.lang="ar-EG";
+var v=speechSynthesis.getVoices().filter(function(x){return /^ar/i.test(x.lang)})[0];if(v)u.voice=v;u.rate=0.95;speechSynthesis.speak(u)}catch(e){}}
+function sayAns(){say(ANS,1)}
+function sayKind(){var L=lines(SB,SK);say(L.length?KP[SK]+" في "+SUB[SB][1]+": "+L.join(". "):"مفيش حاجة هنا",1)}
+function runAi(txt){var e=document.getElementById("ai"),v=typeof txt==="string"?txt:(e?e.value:AIT);AIT="";if(!v||!v.trim())return;ANS=ask(v);render();say(ANS)}
+function setSb(k){var e=document.getElementById("si");if(e)SIT=e.value;SB=k;render()}
+function setSk(k){var e=document.getElementById("si");if(e)SIT=e.value;SK=k;render()}
+function sadd(){var e=document.getElementById("si"),v=(e?e.value:SIT).trim();if(!v)return;ini();P.sn.push({id:Date.now(),s:SB,k:SK,t:v,d:ds(new Date()),o:0});SIT="";save();render()}
+function sdn(id){ini();var w=0;P.sn.forEach(function(a){if(a.id===id){a.o=a.o?0:1;w=a.o}});save();render();if(w){cheer();beep()}}
+function sdel(id){ini();P.sn=P.sn.filter(function(a){return a.id!==id});save();render()}
+
+function dict(id,bt,st,lb,fn){var SR=window.SpeechRecognition||window.webkitSpeechRecognition,ta=document.getElementById(id);if(!ta)return;
+if(VR){VR.stop();return}
+if(!SR){setT(st,"الإملاء الصوتي مش مدعوم في المتصفح ده (Brave مثلاً). افتح التطبيق من Chrome، أو اكتب، أو استخدم ميكروفون الكيبورد.");return}
+var base=fn?"":ta.value,fin="";
+try{VR=new SR();VR.lang="ar-EG";VR.interimResults=true;
+VR.onresult=function(e){var x="";for(var i=0;i<e.results.length;i++)x+=e.results[i][0].transcript;fin=x;ta.value=(base?base+" ":"")+x;if(id==="ai")AIT=ta.value;else SIT=ta.value};
+VR.onerror=function(e){setT(st,e.error==="not-allowed"?"المايك مش مسموح، فعّل الإذن من إعدادات المتصفح.":"حصلت مشكلة في الصوت ("+e.error+")")};
+VR.onend=function(){VR=null;setT(bt,lb);if(fn&&fin)fn(fin)};
+VR.start();setT(bt,"⏹");setT(st,"بسمع… اتكلم")}catch(x){VR=null;setT(st,"الإملاء الصوتي مش متاح")}}
+
+function subjTab(){ini();var h="",k,S=SUB[SB],b=bl(SB),L;
+h+='<div class="box"><b>🎙️ المساعد</b><div class="msg" style="margin-top:6px">قول مثلاً: «ضيف في الكيمياء ممكن أنساها ...» أو «إيه المتراكم في الفيزياء؟» أو «إيه دروس النهاردة؟»</div><div class="add"><input id="ai" placeholder="اتكلم أو اكتب الأمر" value="'+esc(AIT)+'" onkeydown="if(event.key===\'Enter\')runAi()"><button id="vb" style="background:var(--gold)" onclick="dict(\'ai\',\'vb\',\'am\',\'🎤\',runAi)">🎤</button><button onclick="runAi()">نفّذ</button></div><div id="am" style="font-size:12.5px;color:var(--mut)"></div>'+(ANS?'<div class="msg">'+esc(ANS).replace(/\n/g,"<br>")+'</div><button class="link" onclick="sayAns()">🔊 اسمعها</button>':'')+'</div>';
+h+='<div class="sub">';for(k in SUB){var c=bl(k).n;h+='<button class="'+(SB===k?'on':'')+'" onclick="setSb(\''+k+'\')">'+SUB[k][0]+' '+SUB[k][1]+(c?' · '+c:'')+'</button>'}h+='</div>';
+h+='<div class="now">📅 الدرس الجاي: '+esc(nxt(SB))+'</div>';
+h+='<h2 class="late">📌 المتراكم في '+S[1]+' ('+b.n+')</h2>';
+if(!b.n)h+='<div class="card" style="color:var(--mut)">مفيش متراكم 🎉</div>';
+b.a.forEach(function(t){h+=row(t,1)});
+b.b.forEach(function(a){h+='<div class="tk late"><div class="tx"><div>'+esc(a.t)+'</div><small>من يوم سابق</small></div><button class="dn" onclick="nk('+a.id+')">تم</button></div>'});
+b.c.forEach(function(a){h+='<div class="tk late"><div class="tx"><div>'+esc(a.t)+'</div><small>متراكم · <a href="#" style="color:var(--mut)" onclick="sdel('+a.id+');return false">حذف</a></small></div><button class="dn" onclick="sdn('+a.id+')">تم</button></div>'});
+h+='<h2>🗂️ '+S[1]+'</h2><div class="sub">';
+KI.forEach(function(a){var n=cntK(SB,a[0]);h+='<button class="'+(SK===a[0]?'on':'')+'" onclick="setSk(\''+a[0]+'\')">'+a[1]+(n?' ('+n+')':'')+'</button>'});h+='</div>';
+h+='<div class="add"><input id="si" placeholder="'+esc(PH[SK])+'" value="'+esc(SIT)+'" onkeydown="if(event.key===\'Enter\')sadd()"><button id="sm2" style="background:var(--gold)" onclick="dict(\'si\',\'sm2\',\'sm3\',\'🎤\')">🎤</button><button onclick="sadd()">إضافة</button></div><div id="sm3" style="font-size:12.5px;color:var(--mut)"></div>';
+if(SK==="b")h+='<div class="msg">اللي بتضيفه هنا بيظهر فوق في «المتراكم» لحد ما تعلّم عليه تم.</div>';
+else{L=P.sn.filter(function(z){return z.s===SB&&z.k===SK});
+if(!L.length)h+='<div class="card" style="color:var(--mut)">لسه مفيش حاجة هنا 🌱</div>';
+else{h+='<div class="box">';L.slice().reverse().forEach(function(z){h+='<div class="tl"><div style="flex:1;white-space:pre-wrap;font-size:14.5px">'+esc(z.t)+'<div style="font-size:11.5px;color:var(--mut)">'+fd(z.d)+'</div></div><button class="x" onclick="sdel('+z.id+')">✕</button></div>'});
+h+='</div><button class="link" onclick="sayKind()">🔊 اسمعهم</button>'}}
+return h}
+
+function moreTab(){var h='<h2>نقل بياناتك لجهاز تاني</h2><div class="msg" style="margin-top:0">بياناتك محفوظة على الجهاز ده بس. اضغط «نسخ»، ابعت النص لنفسك، وعلى الجهاز التاني الصقه واضغط «استيراد».</div><textarea id="bk"></textarea><div class="row"><div class="btns"><button onclick="expt()">نسخ</button><button onclick="impt()">استيراد</button></div><span id="bm" style="font-size:12.5px;color:var(--mut)"></span></div>';
+return h+'<button class="reset" id="rs" onclick="rz()">تصفير اليوم</button>'}
+function expt(){var e=document.getElementById("bk");e.value=JSON.stringify({D:D,P:P});e.select();try{document.execCommand("copy");document.getElementById("bm").textContent="اتنسخ ✓"}catch(x){document.getElementById("bm").textContent="انسخ النص يدويًا"}}
+function impt(){try{var o=JSON.parse(document.getElementById("bk").value);if(!o||!o.D)throw 0;D=o.D;P=o.P||{};save();render();document.getElementById("bm").textContent="تم الاستيراد ✓"}catch(e){document.getElementById("bm").textContent="النص غير صحيح"}}
+function rz(){var b=document.getElementById("rs");if(b.dataset.s){delete D[ds(cur)];save();render()}else{b.dataset.s=1;b.textContent="اضغط مرة أخرى للتأكيد"}}
+function hdr(){var p=pct(ds(cur)),m=p<1?"يلا نبدأ باسم الله":p<50?"ماشي، كمّل بثبات":p<90?"قربت يا دكتور 💪":"ما شاء الله 🎉";document.getElementById("dt").textContent=cur.toLocaleDateString("ar-EG",{weekday:"long",day:"numeric",month:"long"});
+document.getElementById("hd").innerHTML='<div class="ring"><svg width="64" height="64" viewBox="0 0 36 36"><circle cx="18" cy="18" r="15.9" fill="none" stroke="var(--bd)" stroke-width="3.5"/><circle cx="18" cy="18" r="15.9" fill="none" stroke="var(--ac)" stroke-width="3.5" stroke-linecap="round" stroke-dasharray="'+p+' 100" transform="rotate(-90 18 18)"/><text x="18" y="21.5" text-anchor="middle" font-size="9" font-weight="700" fill="var(--tx)">'+p+'%</text></svg><div><b>إنجاز يومك كله</b><div style="font-size:13px;color:var(--mut)">'+m+'</div></div></div>'}
+function body(){var a=document.getElementById("nt");if(a)NT=a.value;var b=document.getElementById("ni");if(b)ntxt=b.value;var c1=document.getElementById("ai");if(c1)AIT=c1.value;var c2=document.getElementById("si");if(c2)SIT=c2.value;document.getElementById("tb").innerHTML=tab==="t"?todayTab():tab==="s"?subjTab():tab==="w"?worshipTab():moreTab()}
+function tabs(){var T=[["t","🏠","اليوم"],["s","📚","المواد"],["w","🕌","العبادة"],["m","⚙️","الإعدادات"]];
+document.getElementById("tabs").innerHTML=T.map(function(a){return '<button class="'+(tab===a[0]?'on':'')+'" onclick="setTab(\''+a[0]+'\')"><span>'+a[1]+'</span>'+a[2]+'</button>'}).join("")}
+function render(){hdr();body();tabs();setT("sd",sOn()?"🔊":"🔇")}
+function setT(id,v){var e=document.getElementById(id);if(e)e.textContent=v}
+function setW(id,v){var e=document.getElementById(id);if(e)e.style.width=v+"%"}
+setInterval(function(){if(run===-1)return;var s=Math.floor((Date.now()-last)/1000);if(s<=0)return;last+=s*1000;
+var x=day(runKey),o=run==="d"?x.du:x.st[0];if(run==="d")x.du+=s;else x.st[0]+=s;var n=run==="d"?x.du:x.st[0];if(run==="d"&&o<300&&n>=300){beep();toast("خلّصت ٥ دقايق الدعاء 🤲")}else if(run!=="d"&&Math.floor(o/3600)<Math.floor(n/3600)){beep();toast("ساعة مذاكرة كمان اتمّت ✨")}if(++cnt%5===0)save();hdr();
+if(runKey===ds(cur)){var t=sec(runKey);setT("sv",fmt(t));setT("sm",(t/3600).toFixed(1)+" / ١٠ ساعات");setT("sg",msg(t));setW("sb",Math.min(100,t/TOT*100));setT("dv",fmt(x.du));setW("db",Math.min(100,x.du/3))}},1000);
+document.addEventListener("visibilitychange",function(){if(document.hidden)save()});
+document.getElementById("nx").onclick=function(){cur.setDate(cur.getDate()+1);render()};
+document.getElementById("pv").onclick=function(){cur.setDate(cur.getDate()-1);render()};
+render();
+setInterval(fnote,1200000);setTimeout(fnote,1500);
+if('serviceWorker' in navigator&&location.protocol.startsWith('http'))addEventListener('load',()=>navigator.serviceWorker.register('sw.js').catch(()=>{}));
+</script>
+</body>
+</html>
